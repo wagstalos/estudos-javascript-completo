@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabuada js</title>
+</head>
+<body>
+    <h1>funções - tabuada</h1>
+    <select name="" class="js-select" id="currency">
+        <option value="">Selecione...</option>
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    <button onclick="showMultiplication()">Mostrar tabuada</button>
+    <button onclick="clearMultiplication()">Limpar tabuada</button>
+    <div id="output"></div>
+    <script>
+        const output = document.getElementById('output');
+        function showMultiplication(){
+            const selectElement = document.querySelector('.js-select');
+            let n = document.getElementById("currency").value;
+            //let n = Number(prompt('digite um número'))
+            console.log(typeof n)
+
+            let msg =''
+            for (let i = 0; i <= 10; i++){
+                msg += `${n} x ${i} = ${(n*i)} <br>`
+            }
+            output.innerHTML = msg
+        }
+
+        function clearMultiplication(){
+            output.innerHTML = ''
+        }
+
+    </script>
+</body>
+</html>
