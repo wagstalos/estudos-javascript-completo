@@ -1,1 +1,1 @@
-# estudos-javascript-completo
+# Estudos javascript completo
