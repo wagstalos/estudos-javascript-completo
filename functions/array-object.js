@@ -15,7 +15,8 @@ const cars = [
     brand: "GM",
     name: "Onix",
     year: 2022,
-    price: 90000.0
+    price: 90000.0,
+    premium: true
   },
 ];
 
