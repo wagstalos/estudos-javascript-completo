@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imc</title>
+</head>
+
+<style>
+    .tabela {
+        position: relative;
+        width: 300px;
+    }
+
+    .pointer {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: transparent;
+        border: solid 3px white;
+        border-radius: 100px;
+        top: -2px;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        list-style: none;
+
+    }
+
+    li {
+        background: rgb(143, 198, 255);
+        background: linear-gradient(90deg, rgba(143, 198, 255, 1) 0%, rgba(128, 247, 120, 1) 18%, rgba(252, 175, 107, 1) 46%, rgba(255, 0, 0, 1) 77%, rgba(185, 0, 0, 1) 100%);
+
+        width: 100%;
+        height: 10px;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <div>
+        <p for="">Peso (70,2)</p>
+        <input type="number" id="n1" value="70">
+    </div>
+
+
+    <p for="">Altura (1,65)</p>
+    <input type="number" id="n2" value="1.60">
+
+    <button>Calcular</button>
+    <div>
+        <p id="resultado"></p>
+    </div>
+
+    <div class="tabela">
+        <ul>
+            <li></li>
+        </ul>
+
+        <div class="pointer" id="pointer">
+        </div>
+    </div>
+
+    <p id="resultadoText"></p>
+
+    <script src='exercicio_imc.js'></script>
+</body>
+
+</html>
